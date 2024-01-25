@@ -1,0 +1,29 @@
+{
+    "version": "3.5.1",
+    "description": "Cross-platform application for easy encrypted file, folder, and text sharing between devices.",
+    "homepage": "https://rymdport.github.io/",
+    "license": "GPLv3",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Jacalz/rymdport/releases/download/v3.5.1/rymdport-v3.5.1-windows-amd64.zip",
+            "hash": "bbea689d1cb1c3421d9cb0d5f647bf28e1efcc9c5c6e39b50b43c91f05d94317"
+        }
+    },
+    "bin": "rymdport.exe",
+    "checkver": {
+        "github": "https://github.com/Jacalz/rymdport"
+    },
+    "shortcuts": [
+        [
+            "rymdport.exe",
+            "Rymdport"
+        ]
+    ],
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Jacalz/rymdport/releases/download/v$version/rymdport-v$version-windows-amd64.zip"
+            }
+        }
+    }
+}
